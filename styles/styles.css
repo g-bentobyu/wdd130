@@ -2,30 +2,46 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font: 1rem sans-serif;
 }
 
 
 :root {
-    --main-background-color: darkblue;
-    --main-color: darkblue;
+    --main-background-color: rgb(47, 148, 243);
+    --main-color: rgb(47, 148, 243);
 }
 
 
 nav {
    background-color: var(--main-background-color);
-   padding: 10px; 
+   padding: 0.25rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 10px;
+    padding: 1rem;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 h1 {
     color: var(--main-color);
     padding: 1rem;
+    margin: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    border-bottom: 1px solid var(--main-color);
 }
+
+
+
 
 main img {
     width: 150px;
@@ -42,10 +58,6 @@ main p {
 }
 
 
-main {
-    max-width: 750px;
-}
-
 aside {
     width: 20rem;
     position: relative;
@@ -54,14 +66,21 @@ aside {
 
 aside h2 {
     position: absolute;
-    top: 20px;
+    top: 60px;
     right: 70px;
 }
 
 aside img {
     width: 200px;
     height: auto;
+    margin: 1rem;
 }
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 
 footer {
     margin-top: 1rem;
@@ -74,9 +93,14 @@ footer {
 
 .box {
     margin: 1rem;
-    padding: 1rem;
+    padding: 2rem;
     border: 1px solid var(--main-color);
     background-color: white;
     color: black;
 }
 
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
