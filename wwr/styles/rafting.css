@@ -6,7 +6,7 @@
 }
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -49,7 +49,8 @@ body {
 
 .hero {
     position: relative;
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -70,7 +71,7 @@ body {
 .hero article {
     position: absolute;
     top: 300px;
-    left: 55px;
+    left: 65px;
     padding: 1rem;
     color: var(--secondary-color);
     background-color: rgba(0, 0, 185, 0.3);
@@ -82,3 +83,117 @@ body {
     height: auto;
 }
 
+
+header {
+    background-color: var(--primary-color);
+    height: 5rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+
+header img {
+    width: 50px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav a {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+
+.history {
+    background-color: var(--primary-color);
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.history img{
+    width: 250px;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.history h2 {
+    margin-top: 1rem;
+    color: var(--secondary-color);
+    grid-column: 1/4;
+    font-weight: bold;
+}
+
+.history p {
+    padding: 2rem;
+    color: var(--secondary-color);
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+
+.adventure h2 {
+    margin-top: 1rem;
+    grid-column: 1/6;
+    font-weight: bold;
+}
+
+.adventure img {
+    width: 200px;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.adventure figure {
+    font-family: "Montserrat", serif;
+    font-weight: 200;
+    font-style: normal;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 1fr 15px 15px 15px;
+    gap: 30px;
+    align-items: center;
+    justify-items: end;
+}
+
+footer p {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--secondary-color);
+    margin: auto;
+}
+
+footer img {
+    width: 30px;
+    height: auto;
+    margin: 1rem;
+}
