@@ -29,7 +29,7 @@ h2 {
 }
 
 
-p {
+p, label {
     font-family: "Montserrat", serif;
     font-weight: 200;
     font-style: normal;
@@ -173,6 +173,138 @@ nav a:hover {
     color: var(--primary-color);
     font-weight: bold;
     margin-bottom: 1rem;
+}
+
+
+
+.waterfalls {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+
+.waterfalls h2 {
+    margin-top: 1rem;
+    grid-column: 1/6;
+    font-weight: bold;
+}
+
+.waterfalls p {
+    margin-top: 1rem;
+    grid-column: 1/6;
+    font-weight: bold;
+}
+
+
+
+.waterfalls img {
+    width: 200px;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.waterfalls figure {
+    font-family: "Montserrat", serif;
+    font-weight: 200;
+    font-style: normal;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+
+
+
+.newsletter h2 {
+    text-align: center;
+    padding-top: 1rem;
+    font-weight: bold;
+}
+
+.newsletter p {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+
+form {
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input {
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 2px;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 2px;
+}
+
+
+.table-container {
+    margin-bottom: 2rem;
+}
+
+
+.trips caption {
+    margin-bottom: 1rem;
+    font-family: "Roboto", serif;
+    font-style: normal;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+
+.trips {
+    border-collapse: collapse;
+    margin: 1rem auto;
+    font-family: "Roboto", serif;
+    font-style: normal;
+    min-width: 1000px;
+}
+
+.trips tr th {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem 1rem;
+    text-align: left;
+}
+
+
+.trips td {
+    padding-top: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+
+
+.construction {
+    min-height: 800px;
+}
+
+.construction p {
+    margin-top: 350px;
+    text-align: center;
+    font-family: "Roboto", serif;
+    font-style: normal;
+    font-size: larger;
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 
